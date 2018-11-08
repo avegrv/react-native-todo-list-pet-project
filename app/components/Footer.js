@@ -1,11 +1,10 @@
-import React, { Component, PropTypes } from 'react'
-import { TouchableOpacity, Text, StyleSheet } from 'react-native'
+import React, {Component, PropTypes} from 'react'
+import {TouchableOpacity, Text, StyleSheet} from 'react-native'
 
-const styles = StyleSheet.create({
-})
+const styles = StyleSheet.create({})
 
 export default class Footer extends Component {
-  render() {
-    return null
-  }
+    render() {
+        return null
+    }
 }
