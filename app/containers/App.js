@@ -5,6 +5,7 @@ import {connect} from 'react-redux'
 import {actionCreators} from '../redux/todoRedux'
 import Title from "../components/Title";
 import SafeAreaView from "react-native-safe-area-view";
+import Footer from "../components/Footer";
 
 const styles = StyleSheet.create({
     container: {
@@ -25,7 +26,8 @@ class App extends Component {
 
     render() {
         return <SafeAreaView style={styles.container}>
-            <Title>Todo list</Title>
+            <Title> Todo list </Title>
+            <Footer></Footer>
         </SafeAreaView>
     }
 }
