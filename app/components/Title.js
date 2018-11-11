@@ -3,7 +3,10 @@ import {View, Text, StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
     text: {
-        color: 'whitesmoke'
+        backgroundColor: 'skyblue',
+        color: 'white',
+        padding: 15,
+        textAlign: 'center'
     }
 })
 

@@ -1,10 +1,10 @@
 import React, {Component, PropTypes} from 'react'
 import {View, ScrollView, StyleSheet, TextInput, Text} from 'react-native'
 import {connect} from 'react-redux'
-import {Actions} from 'react-native-router-flux'
 
 import {actionCreators} from '../redux/todoRedux'
 import Title from "../components/Title";
+import SafeAreaView from "react-native-safe-area-view";
 
 const styles = StyleSheet.create({
     container: {
@@ -24,9 +24,9 @@ class App extends Component {
     }
 
     render() {
-        return <View>
-            <Title/>
-        </View>
+        return <SafeAreaView style={styles.container}>
+            <Title>Todo list</Title>
+        </SafeAreaView>
     }
 }
 
