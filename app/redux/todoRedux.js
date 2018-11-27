@@ -31,14 +31,12 @@ export const reducer = (state = initialState, action) => {
     switch(type) {
         case types.ADD_ITEM: {
             return {
-                ...state,
-                items: [{label: payload, completed: false}, ...items],
+                items: [{label: payload, completed: false}, ...items]
             }
         }
         case types.REMOVE_ITEM: {
             return {
-                ...state,
-                items: items.filter((item, i) => i !== payload),
+                items: items.filter((item, i) => i !== payload)
             }
         }
         case types.TOGGLE_ITEM_COMPLETED: {
